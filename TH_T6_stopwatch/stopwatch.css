@@ -6,7 +6,8 @@
 body{
     height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(45deg, blue,red  );
+    background-color: #FFDEE9;
+    background-image: linear-gradient(45deg, #f5abc4 0%, #7dfaf6 100%);
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
@@ -18,43 +19,55 @@ body{
 
   
 #timer {
+    text-shadow: -1px 0 black, 0 1px black,1px 0 black, 0 -1px black;
+    width: 400px;
     padding: 5px;
-    margin-bottom: 10px;
-    background: linear-gradient(to left, blue, red   );
-    border: 2px solid #000;
+    margin-bottom: 20px;
+    background-color: #FA8BFF;
+    background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+    border: 2px solid #686868;
     border-radius: 20px;
     color: white;
     font-size: 50px;
+}
 
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
   
 button {
-
-    margin: 20px;
-    padding: 10px 20px;
-    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: -1px 0 black, 0 1px black,1px 0 black, 0 -1px black;
+    margin: 20px 0px;
+    padding: 10px 25px; 
+    font-size: 24px;
     border-radius: 20px;
     color: #fff;
     border: none;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 .start{
-    background-color: #00dc21;
-    border: 2px solid #000 ;
+    background-image: linear-gradient(45deg,#00B712,#5AFF15);
+    border: 2px solid #686868;
 }
 .stop{
-    background-color: #eb423c;
-    border: 2px solid #000 ;
+    background-image: linear-gradient(45deg,#b40000, red);
+    border: 2px solid #686868;
 }
 .reset{
-    background-color: #ffaa00;
-    border: 2px solid #000 ;
+    background-image: linear-gradient(45deg,#f3aa1a, rgb(237, 237, 0));
+    border: 2px solid #686868;
 }
   
 .start:hover,
 .stop:hover ,
 .reset:hover{
-    background: linear-gradient(to left, blue, red   );
+    color: black;
+    text-shadow: none;
+    background-color: #FA8BFF;
+    background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
     transform: scale(1.05);
 }
