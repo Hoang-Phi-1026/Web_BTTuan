@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    overflow: hidden;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(/TH_T6_calculator/messi-4-min.jpg);
+    background-repeat: no-repeat;
+    background-size: cover  ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.form{
+    padding: 20px 0;
+    text-align: center;
+    margin: 0px auto;
+    height: auto;
+    backdrop-filter: blur(20px); 
+    position: relative;
+    display: none;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right bottom, #BF953F, #FCF6BA,#B38728,#FBF5B7,#AA771C);
+}
+
+.title{
+    text-shadow: -1px 0 black, 0 1px black,1px 0 black, 0 -1px black;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.container{
+    margin: 0 auto;
+    width: 95%;
+}
+
+.form_input{
+    text-align: center;
+    width: 70%;
+    height: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+input{
+    color: white;
+    width: 90%;
+    padding: 10px 0;
+    margin: 20px 0;
+    font-size: 17px;
+    text-align: center;
+    border-radius: 8px;
+    background: transparent;
+    border: 3px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right bottom, #BF953F, #FCF6BA,#B38728,#FBF5B7,#AA771C);
+   
+}
+
+input::placeholder{
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black,1px 0 black, 0 -1px black;
+}
+.form_button{
+    height: 254.4px;
+    text-align: center;
+    width: 30%;
+    float: right;
+    display: flex;
+    align-items: center;
+}
+.container_button{
+    height: 80%;
+    margin: 0 auto;
+    align-items: center;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+button{
+    color: white;
+    width: 40%;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 8px;
+    background: transparent;
+    border: 3px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right bottom, #BF953F, #FCF6BA,#B38728,#FBF5B7,#AA771C);
+   
+}
+.bxs-x-circle{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 33px;
+    color: #D1B464;
+
+
+}
+.open{
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black,1px 0 black, 0 -1px black;
+    font-weight: bold;
+    width:10%; 
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px 0;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+    border: 3px solid;
+    border-image-source: linear-gradient(to right bottom, #BF953F, #FCF6BA,#B38728,#FBF5B7,#AA771C);
+}
+
+
