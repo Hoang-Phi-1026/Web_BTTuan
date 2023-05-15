@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
+    
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+    <div class="container main">
+
+        <div class="banner-img">
+            <img src="/banner.png" alt="">
+        </div>
+
+        <ul class="nav d-flex">
+            <li class="nav-item">
+                <a href="" class="nav-link">Đăng nhập</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="#" class="nav-link" id="link-myModal">Đặt lịch</a>
+            </li>
+        </ul>
+
+        <div class="text-center">
+            <p>Lịch Khám - Chữa Bệnh</p>
+        </div>
+
+        <table class="table">
+            <tr style="font-weight: 600;">
+                <td class="table-td">STT</td>
+                <td class="table-td">Mã Bệnh nhân</td>
+                <td class="table-td">Mật khẩu</td>
+                <td class="table-td">Ngày khám</td>
+                <td class="table-td">Phụ thu dịch vụ</td>
+                <td class="table-td">Chuyên khoa</td>
+            </tr>
+            
+        </table>
+
+        <div class="text-center h3">
+            <p>21061491 - Phạm Võ Hoàng Phi</p>
+        </div>
+        
+    </div>
+
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <p class="h2 text-center">Đặt lịch khám online</p>
+                </div>
+
+                <form action="">
+                    <div class="modal-body">
+
+                        <div class="form-group row">
+                            <label for="" class="title-txt col-sm-12 col-form-lable text-left">Mã bệnh nhân</label>
+                            <div class="col-sm-12">
+                                <input type="text" placeholder="Nhập mã bệnh nhân" class="form-control form-control-sm" id="txtMa">
+                                <label class="lb-setup"for="" id="chkMa">(*)BN-YYYYY</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="" class="title-txt col-sm-12 col-form-lable text-left">Mật khẩu</label>
+                            <div class="col-sm-12">
+                                <input type="password" placeholder="Nhập mật khẩu" class="form-control form-control-sm" id="txtTour">
+                                <label class="lb-setup"for="" id="chkTour">(*)</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="" class="title-txt col-sm-12 col-form-lable text-left">Ngày khám</label>
+                            <div class="col-sm-12">
+                                <input type="date" class="form-control form-control-sm" id="txtDate">
+                                <label class="lb-setup"for="" id="chkDate">(*)</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="" class="title-txt col-sm-12 col-form-lable text-left">Loại dịch vụ</label>
+                            <div class="col-sm-12 col-sm-12-checkbox">
+                                <div class="check">
+                                    <input class="check-ip" type="checkbox">Khám bệnh theo yêu cầu
+                                </div>
+                                <div class="check">
+                                    <input class="check-ip" type="checkbox">Điều trị ngoại trú
+                                </div>
+                                <div class="check">
+                                    <input class="check-ip" type="checkbox">Bác sĩ theo yêu cầu
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="" class="title-txt col-sm-12 col-form-lable text-left">Chuyên khoa</label>
+                            <div class="col-sm-12">
+                                <select class="form-control form-control-sm" id="txtChuyenKhoa">
+                                    <option value="Ngoại tổng quát">Ngoại tổng quát</option>
+                                    <option value="Nhi">Nhi</option>
+                                    <option value="Nội tổng quát">Nội tổng quát</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="modal-footer">
+                        <button id="btnSave" class="btn btn-block btn-primary btn-lg" >Đặt lịch</button>    
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/js/main.js"></script>
+</html>

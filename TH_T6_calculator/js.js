@@ -1,39 +1,39 @@
 function Cong() {
-    var input1 = parseInt(document.getElementById("input1").value);
-    var input2 = parseInt(document.getElementById("input2").value);
-    var result = input1 + input2;
-    document.getElementById("result").value = result;
+    var a = parseInt(document.getElementById("a").value);
+    var b = parseInt(document.getElementById("b").value);
+    var ketqua = a + b;
+    document.getElementById("ketqua").value = ketqua;
 }
   
 function Tru() {
-    var input1 = parseInt(document.getElementById("input1").value);
-    var input2 = parseInt(document.getElementById("input2").value);
-    var result = input1 - input2;
-    document.getElementById("result").value = result;
+    var a = parseInt(document.getElementById("a").value);
+    var b = parseInt(document.getElementById("b").value);
+    var ketqua = a - b;
+    document.getElementById("ketqua").value = ketqua;
 }
   
 function Nhan() {
-    var input1 = parseInt(document.getElementById("input1").value);
-    var input2 = parseInt(document.getElementById("input2").value);
-    var result = input1 * input2;
-    document.getElementById("result").value = result;
+    var a = parseInt(document.getElementById("a").value);
+    var b = parseInt(document.getElementById("b").value);
+    var ketqua = a * b;
+    document.getElementById("ketqua").value = ketqua;
 }
   
 function Chia() {
-    var input1 = parseInt(document.getElementById("input1").value);
-    var input2 = parseInt(document.getElementById("input2").value);
-    var result = input1 / input2;
-    document.getElementById("result").value = result;
+    var a = parseInt(document.getElementById("a").value);
+    var b = parseInt(document.getElementById("b").value);
+    var ketqua = a / b;
+    document.getElementById("ketqua").value = ketqua;
 }
 function CanBacHai() {
-    var input1 = parseFloat(document.getElementById("input1").value);
-    var result = Math.sqrt(input1);
-    document.getElementById("result").value = result;
+    var a = parseFloat(document.getElementById("a").value);
+    var ketqua = Math.sqrt(a);
+    document.getElementById("ketqua").value = ketqua;
 }
 function Reset() {
-    document.getElementById("input1").value = "";
-    document.getElementById("input2").value = "";
-    document.getElementById("result").value = "";
+    document.getElementById("a").value = "";
+    document.getElementById("b").value = "";
+    document.getElementById("ketqua").value = "";
 }
 
 var openButton = document.querySelector('.open');

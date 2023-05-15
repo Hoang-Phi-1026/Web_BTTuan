@@ -18,7 +18,7 @@ body{
     text-align: center;
     margin: 0px auto;
     height: auto;
-    backdrop-filter: blur(20px); 
+    backdrop-filter: blur(25px); 
     position: relative;
     display: none;
     border: 10px solid;
@@ -86,6 +86,7 @@ input::placeholder{
 }
 button{
     color: white;
+    text-shadow: -1px 0 black, 0 1px black,1px 0 black, 0 -1px black;
     width: 40%;
     font-size: 18px;
     padding: 10px;
